@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exploring_js_objects.js"></script>
+   
+
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Library System</h1>
+
+        <h2>Add a New Book</h2>
+        <form id="addBookForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="pages" placeholder="Pages" required>
+            <button type="submit">Add Book</button>
+        </form>
+
+        <button onclick="displayLibrary()">Display Library</button>
+        <button onclick="searchBooks()">Search Books</button>
+        <button onclick="filterBooksByPages()">Filter Books by Pages</button>
+        <button onclick="modifyTitlesAndAuthors()">Modify Titles and Authors</button>
+
+        <div class="output" id="output"></div>
+    </div>
+</body>
+</html>
